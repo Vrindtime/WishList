@@ -1,0 +1,12 @@
+<main style="margin: 2%;">
+  <div class="container">
+    <h1 style="text-align: center;">My {{title}}</h1>
+
+    <add-wish-form (addWish)="receivemessage($event)"></add-wish-form>
+
+    <app-filter (filter_data)="filter__value($event)"></app-filter>
+
+    <w-list [visibleitem]="visibleitem()"  ></w-list>
+
+  </div>
+</main>
